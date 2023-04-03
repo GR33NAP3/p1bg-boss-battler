@@ -1,0 +1,47 @@
+body{
+    background-color: slategray;
+}
+#screen{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#attackChoice{
+    height: 18vh;
+    width: 40vw;
+    margin: auto;
+}
+#enemy{
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#player{
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#enemyHealth{
+    max-height: 40vh;
+    width: 40vw;
+}
+#enemyPic{
+    max-height: 40vh;
+    width: 40vw;
+}
+#playerHealth{
+    max-height: 40vh;
+    width: 40vw;
+}
+#playerPic{
+    max-height: 40vh;
+    width: 40vw;
+}
