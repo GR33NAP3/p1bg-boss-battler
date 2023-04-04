@@ -8,20 +8,16 @@ body{
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
+/*sets up where the attack choices will go center screen*/
 #attackChoice{
     height: 18vh;
     width: 40vw;
     margin: auto;
 }
-#enemy{
-    width: 100vw;
-    height: 40vh;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-#player{
+
+/*sets up the enemy part of the screen*/
+#enemy{ 
     width: 100vw;
     height: 40vh;
     display: flex;
@@ -36,6 +32,16 @@ body{
 #enemyPic{
     max-height: 40vh;
     width: 40vw;
+}
+
+/*sets up the players part of the screen*/
+#player{
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 #playerHealth{
     max-height: 40vh;
