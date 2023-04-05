@@ -9,19 +9,27 @@
 </head>
 <body>
     <script src="./enemy.js"></script>
-    <script src="./player.js"></script>    
+    <script src="./player.js"></script>  
+    <script src="./damageCalculator.js"></script> 
     <script src="./main.js"></script>
     <div id="screen">
         <div id="enemy">
-            
-            <div id="enemyHealth"></div>
+            <div id="enemyHealth">
+                <progress id="enemyHealthBar" value="100" max="100"></progress>
+            </div>
             <img id="enemyPic">
         </div>
-        <div id="attackChoice"></div>
+        <div id="attackChoice">
+            <button id="windAttack">Tornado Slash</button>
+            <button id="earthAttack">Earth Spike</button>
+            <button id="fireAttack">Inferno blast</button>
+            <button id="waterAttack">Tidal blade</button>
+        </div>
         <div id="player">
-
             <img id="playerPic">            
-            <div id="playerHealth"></div>
+            <div id="playerHealth">
+                <progress id="playerHealthBar" value="100" max="100"></progress>
+            </div>
         </div>
     </div>
 </body>

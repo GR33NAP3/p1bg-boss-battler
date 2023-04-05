@@ -7,7 +7,8 @@ class monster{
     this.def = def
     this.weekness = weekness
     this.strength = strength
-    this.imageSrc= `${name}.jpg`
+    this.timesDefeated = 0
+    this.imageSrc= `assets/${name}.jpg`
     this.imgAlt=`this is an image of ${name}`
     }
 
@@ -15,6 +16,7 @@ class monster{
         this.maxHealth = this.maxHealth * 2
         this.attack = this.attack * 2
         this.def = this.def * 2
+        this.timesDefeated ++
+        this.currentHealth = this.maxHealth
     }
-
 }

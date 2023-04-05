@@ -31,7 +31,7 @@ body{
 }
 #enemyPic{
     max-height: 40vh;
-    width: 40vw;
+    width: 30vw;
 }
 
 /*sets up the players part of the screen*/
@@ -49,5 +49,36 @@ body{
 }
 #playerPic{
     max-height: 40vh;
-    width: 40vw;
+    width: 30vw;
+}
+
+/* changes the progress bars hights */
+progress{
+    height: 45px;
+}
+
+/* sets up the attack window */
+#attackChoice{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+button{
+    width:8.5em;
+}
+#windAttack{
+    background-color: darkgray;
+    color:white;
+}
+#earthAttack{
+    background-color: brown;
+    color:white;
+}
+#fireAttack{
+    background-color: darkred;
+    color:white;
+}
+#waterAttack{
+    background-color: royalblue;
+    color: white;
 }
