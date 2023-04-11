@@ -117,7 +117,9 @@ function main(){
             setEnemyHealth()
             takeDamage(playerChar,currentMonster,playerPic)
                 if(playerChar.currentHealth<=0){
-                    window.alert(`Game Over congradulations you beat ${playerChar.bossesDefeated} boss(es)`)
+                    // window.alert(`Game Over congradulations you beat ${playerChar.bossesDefeated} boss(es)`)
+                    showPopup(playerChar)
+                    await sleep(5000)
                     location.reload()
                 }
             setPlayerHealth()
@@ -127,7 +129,13 @@ function main(){
             newRound()
         }
     }
-
+    // function for showing the popup
+    function showPopup(playerChar){
+        const popup = document.getElementById('myPopup');
+        popup.textContent=`Game Over congratulations you've beaten ${playerChar.bossesDefeated} boss(es)`
+        popup.append()
+        popup.classList.toggle('show')
+    }
     //sets a new monster
     function newRound(){
         currentMonster = summonMonster()
