@@ -35,6 +35,7 @@ body{
 #enemyPic{
     max-height: 40vh;
     width: 30vw;
+    border:3px solid black;
 }
 
 /*sets up the players part of the screen*/
@@ -53,6 +54,7 @@ body{
 #playerPic{
     max-height: 40vh;
     width: 30vw;
+    border:3px solid white;
 }
 
 /* changes the progress bars hights */
@@ -68,17 +70,18 @@ progress{
 }
 button{
     width:8.5em;
+    border:3px solid white;
 }
 #windAttack{
     background-color: darkgray;
     color:white;
 }
 #earthAttack{
-    background-color: brown;
+    background-color: darkgreen;
     color:white;
 }
 #fireAttack{
-    background-color: darkred;
+    background-color: red;
     color:white;
 }
 #waterAttack{
