@@ -1,3 +1,4 @@
+//creates the player class to hold the info
 class player{
     constructor(){
     this.name = 'Player One'
@@ -10,6 +11,7 @@ class player{
     this.bossesDefeated = 0
     }
 
+    //function in the class to make the caracter stronger when defeating a boss
     getStronger(){
         this.maxHealth = this.maxHealth + 50
         this.attack = this.attack + 5
@@ -17,16 +19,4 @@ class player{
         this.bossesDefeated ++
         this.currentHealth += 50
     }
-    // heal(){
-    //     if(this.currentHealth <= (this.maxHealth - 50) && this.currentHealth > 0){
-    //         console.log()
-    //         this.currentHealth = this.currentHealth + 50
-    //     }else{
-    //         console.log(this.maxHealth)
-    //         this.currentHealth = this.maxHealth
-    //         console.log(this.currentHealth)
-    //     }
-    // }
-
-
 }

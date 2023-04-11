@@ -12,6 +12,7 @@
     <script src="./player.js"></script>  
     <script src="./damageCalculator.js"></script> 
     <script src="./main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
     <div id="screen">
         <div id="enemy">
             <div id="enemyHealth">
@@ -20,13 +21,13 @@
             <img id="enemyPic">
         </div>
         <div id="attackChoice">
-            <button id="windAttack">Tornado Slash</button>
-            <button id="earthAttack">Earth Spike</button>
+            <button id="windAttack"><span title="Attack with the Wind element">Tornado Slash</span></button>
+            <button id="earthAttack"><span title="Attack with the Earth element">Earth Spike</span></button>
             <div class="popup">
-                <span class="popuptext" id="myPopup"></span>
+                <span class="popuptext" id="gameOverPopup"></span>
               </div>
-            <button id="fireAttack">Inferno blast</button>
-            <button id="waterAttack">Tidal blade</button>
+            <button id="fireAttack"><span title="Attack with the Fire element">Inferno blast</span></button>
+            <button id="waterAttack"><span title="Attack with the Water element">Tidal blade</span></button>
         </div>
         <div id="player">
             <img id="playerPic">            

@@ -66,7 +66,7 @@ progress{
     height: 45px;
 }
 
-/* sets up the attack window */
+/* sets up the attack window and colors the buttons for visability */
 #attackChoice{
     display: flex;
     flex-direction: row;

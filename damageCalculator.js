@@ -36,9 +36,3 @@ function shake(el) {
     return true;
   }
 
-
-// function sleep(time){
-//     return new Promise(resolve => {
-//         setTimeout(resolve, time)
-//     })  
-// }

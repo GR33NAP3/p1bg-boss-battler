@@ -80,6 +80,7 @@ function main(){
         monstersBeaten.textContent = `bosses beaten ${playerChar.bossesDefeated}`
         playerHealth.append(monstersBeaten)
     }
+
     //wind attack
     const windAttack = document.getElementById('windAttack')
     windAttack.addEventListener('click',async () => {
@@ -110,7 +111,6 @@ function main(){
         isDead()
     })
 
-
     //checks if monster is dead
     async function isDead(){
         if(currentMonster.currentHealth > 0){
@@ -131,7 +131,7 @@ function main(){
     }
     // function for showing the popup
     function showPopup(playerChar){
-        const popup = document.getElementById('myPopup');
+        const popup = document.getElementById('gameOverPopup');
         popup.textContent=`Game Over congratulations you've beaten ${playerChar.bossesDefeated} boss(es)`
         popup.append()
         popup.classList.toggle('show')
