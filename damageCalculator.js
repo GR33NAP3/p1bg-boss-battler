@@ -15,8 +15,8 @@ function takeDamage(playerChar,currentMonster, playerPic){
     
     if((currentMonster.attack - playerChar.def)>0){
         playerChar.currentHealth = playerChar.currentHealth - (currentMonster.attack - playerChar.def)
+        shake(playerPic)
     }
-    shake(playerPic)
 }
 
 //sets up to move the images a little to show it got hit
