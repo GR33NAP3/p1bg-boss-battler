@@ -82,59 +82,68 @@ function main(){
     }
     //wind attack
     const windAttack = document.getElementById('windAttack')
-    windAttack.addEventListener('click', () => {
-        doDamage(playerChar,currentMonster, 'wind')
+    windAttack.addEventListener('click',async () => {
+        doDamage(playerChar,currentMonster, 'wind', enemyPic)
+        await sleep(500)
         isDead()
     })
     //earth attack
     const earthAttack = document.getElementById('earthAttack')
-    earthAttack.addEventListener('click', () => {
-        doDamage(playerChar,currentMonster, 'earth')
+    earthAttack.addEventListener('click',async () => {
+        doDamage(playerChar,currentMonster, 'earth', enemyPic)
+        await sleep(500)
         isDead()
+        
     })
     // fire attack
     const fireAttack = document.getElementById('fireAttack')
-    fireAttack.addEventListener('click', () => {
-        doDamage(playerChar,currentMonster, 'fire')
+    fireAttack.addEventListener('click',async () => {
+        doDamage(playerChar,currentMonster, 'fire', enemyPic)
+        await sleep(500)
         isDead()
     })
     //water attack
     const waterAttack = document.getElementById('waterAttack')
-    waterAttack.addEventListener('click', () => {
-        doDamage(playerChar,currentMonster, 'water')
+    waterAttack.addEventListener('click',async () => {
+        doDamage(playerChar,currentMonster, 'water', enemyPic)
+        await sleep(500)
         isDead()
     })
 
+
     //checks if monster is dead
-    function isDead(){
+    async function isDead(){
         if(currentMonster.currentHealth > 0){
             setEnemyHealth()
-            takeDamage(playerChar,currentMonster)
+            takeDamage(playerChar,currentMonster,playerPic)
                 if(playerChar.currentHealth<=0){
                     window.alert(`Game Over congradulations you beat ${playerChar.bossesDefeated} boss(es)`)
                     location.reload()
                 }
             setPlayerHealth()
         }else if(currentMonster.currentHealth <= 0){
-            console.log(currentMonster.currentHealth)
             currentMonster.getStronger()
             playerChar.getStronger()
             newRound()
         }
     }
 
-
+    //sets a new monster
     function newRound(){
         currentMonster = summonMonster()
         setEnemyHealth()
         setPlayerHealth()
         setEnemyPic()
         setplayerPic()
-        console.log(currentMonster)
     }
     newRound()
 }
-
+//puts a half second break before player takes damage to help show turns
+function sleep(time){
+    return new Promise(resolve => {
+        setTimeout(resolve, time)
+    })  
+}
 window.onload= async()=>{
     main()
 }

@@ -1,5 +1,5 @@
 body{
-    background-color: slategray;
+    background-color:skyblue;
 }
 #screen{
     display: flex;
@@ -24,6 +24,9 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    position:relative;
+    text-align: center;
+
 }
 #enemyHealth{
     max-height: 40vh;
