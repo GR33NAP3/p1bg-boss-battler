@@ -33,6 +33,7 @@ body{
 #enemyHealth{
     max-height: 40vh;
     width: 40vw;
+    color:white;
 }
 #enemyPic{
     max-height: 40vh;
@@ -52,6 +53,7 @@ body{
 #playerHealth{
     max-height: 40vh;
     width: 40vw;
+    color:white;
 }
 #playerPic{
     max-height: 40vh;
