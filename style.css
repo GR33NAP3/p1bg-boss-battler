@@ -1,5 +1,7 @@
 body{
     background-color:skyblue;
+    background-image: url('assets/cave-background.jpg');
+    background-size: cover;
 }
 #screen{
     display: flex;
