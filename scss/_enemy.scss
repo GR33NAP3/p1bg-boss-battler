@@ -1,0 +1,21 @@
+#enemy{ 
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position:relative;
+    text-align: center;
+
+}
+#enemyHealth{
+    max-height: 40vh;
+    width: 40vw;
+    color:white;
+}
+#enemyPic{
+    max-height: 40vh;
+    width: 30vw;
+    border:3px solid white;
+}

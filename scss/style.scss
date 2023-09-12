@@ -1,0 +1,46 @@
+@import "utilities";
+@import "config";
+@import "btnDefault";
+@import "enemy";
+@import "player";
+@import "screen";
+@import "popup";
+
+//sets the generic css
+body{
+    background-color: $default-background;
+    background-image: url('assets/cave-background.jpg');
+    font-family: $font-stack;
+    background-size: cover;
+}
+img {
+    border-radius: 50%;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
+/* changes the progress bars hights */
+progress{
+    height: 45px;
+}
+
+//accounts for diferent spacing
+$spaceamounts: (1,2,3,4,5);
+
+@each $space in $spaceamounts {
+  .m-#{$space} {
+    margin: #{$space}rem;
+  }
+  .my-#{$space} {
+    margin: #{$space}rem 0;
+  }
+
+  .p-#{$space} {
+    padding: #{$space}rem;
+  }
+  .py-#{$space} {
+    padding: #{$space}rem 0;
+  }
+}

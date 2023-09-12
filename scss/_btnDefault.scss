@@ -1,0 +1,33 @@
+@import "config";
+@import "utilities";
+
+//generic button style
+button{
+    width: $default-btn-width;
+    border:3px solid white;
+}
+
+#attackChoice{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+    //specific stlye
+    #windAttack{
+        background-color: $color-wind;
+        @include text-color-picker($color);
+    }
+    #earthAttack{
+        background-color: $color-earth;
+
+    }
+    #fireAttack{
+        background-color: $color-fire;
+        color:white;
+    }
+    #waterAttack{
+        background-color: $color-water;
+        color: white;
+    }
+}

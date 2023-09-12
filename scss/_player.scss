@@ -1,0 +1,18 @@
+#player{
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#playerHealth{
+    max-height: 40vh;
+    width: 40vw;
+    color:white;
+}
+#playerPic{
+    max-height: 40vh;
+    width: 30vw;
+    border:3px solid white;
+}
